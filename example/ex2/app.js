@@ -1,5 +1,7 @@
-const example = require('./module');
+const {next, prev} = require('./module');
 
 const print = console.log;
 
-print(example.next());
+print(next());
+print(next());
+print(prev());
