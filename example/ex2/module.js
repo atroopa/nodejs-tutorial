@@ -12,6 +12,9 @@ const squere = () => {
     return number * number;
 }
 
-module.exports.next = next;
-module.exports.prev = prev;
-module.exports.squere = squere;
+module.exports = {
+    next,
+    prev,
+    squere,
+    number
+}
