@@ -1,7 +1,8 @@
-import * as myModule from "./module.js";
+import mmm from "./module.js";
 
 const print = console.log;
 
-print(myModule.next());
-print(myModule.next());
-print(myModule.prev());
+print(mmm.next());
+print(mmm.next());
+print(mmm.prev());
+print(mmm.squere());

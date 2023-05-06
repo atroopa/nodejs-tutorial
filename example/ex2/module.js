@@ -11,7 +11,7 @@ const squere = () => {
     return number * number;
 }
 
-export default = {
+export default {
     next,
     prev,
     squere
