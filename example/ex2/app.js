@@ -1,4 +1,4 @@
-import * as myModule from "./module.mjs";
+import * as myModule from "./module.js";
 
 const print = console.log;
 
