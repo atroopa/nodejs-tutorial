@@ -1,4 +1,4 @@
-const {next, prev} = require('./module');
+import myModule from "./module";
 
 const print = console.log;
 

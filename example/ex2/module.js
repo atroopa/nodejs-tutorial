@@ -1,20 +1,14 @@
 let number = 0;
 
-const next = () => {
+export const next = () => {
     return ++number ;
 }
 
-const prev = () => {
+export const prev = () => {
     return --number ;
 }
 
-const squere = () => {
+export const squere = () => {
     return number * number;
 }
 
-module.exports = {
-    next,
-    prev,
-    squere,
-    number
-}
