@@ -29,7 +29,9 @@ class Fish {
 const fish1 = new Fish("red", 20, 5);
 const fish2 = new Fish("Black", 60, 20);
 
-fish1.up();
+for (let i=0 ; i<=30 ; i++){
+    fish1.up();
+}
 
 print(fish1);
-print(fish2);
+print(fish2 instanceof Fish);
