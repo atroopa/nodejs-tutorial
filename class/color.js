@@ -1,4 +1,5 @@
 console.clear();
+import util from "util"
 
 const print = console.log;
 
@@ -24,6 +25,10 @@ class Color{
         );
     }
 
+    toString(){
+        return `rgb(${this.r}, ${this.g} , ${this.b})`;
+    }
+
 }
 
 const c1 = new Color();
@@ -34,3 +39,4 @@ print(c2);
 
 const c3 = Color.forHex("3334ad");
 print(c3);
+print(c3.toString());
