@@ -29,6 +29,10 @@ class Color{
         return `rgb(${this.r}, ${this.g} , ${this.b})`;
     }
 
+    [util.inspect.custom]() {
+        return `rgb(${this.r}, ${this.g} , ${this.b})`;
+    }
+
 }
 
 const c1 = new Color();
