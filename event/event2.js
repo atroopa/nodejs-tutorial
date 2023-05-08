@@ -33,3 +33,6 @@ emitter.emit("event2");
 emitter.on("event1", handler);
 emitter.emit("event1");
 
+// Remove Event Listener ====================================
+emitter.removeListener("event1", handler);
+emitter.emit("event1") // not work
