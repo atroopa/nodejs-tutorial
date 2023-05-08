@@ -12,4 +12,16 @@ emitter.on("event1", function() {
 
 emitter.emit("event1");
 
-// 
+
+// removeAllListeners Event 2  =======================================
+emitter.on("event2", () => {
+    print("Event 2");
+});
+
+emitter.emit("event2");
+
+emitter.removeAllListeners();
+
+emitter.emit("event1"); // not work !
+emitter.emit("event2"); // not Work !
+
