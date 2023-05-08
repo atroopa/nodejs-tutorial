@@ -5,27 +5,31 @@ const print = console.log;
 
 class Color{
 
+    #r = 0;
+    #g = 0;
+    #b = 0;
+
     constructor(r=0 , g=0, b=0){
-        this.r = r;
-        this.g = g;
-        this.b = b;
+        this.#r = r;
+        this.#g = g;
+        this.#b = b;
+        Object.seal(this);
     }
 
-    setRed(value){
+    set red(value){
         if(value >=0 && value <= 255){
-            this.r = parseInt(value);
+            this.#r = parseInt(value);
         } else {
             throw new RangeError("value must be between 0 and 255");
         }
     }
 
-    getRed(){
-        return this.r;
+    get red(){
+        return this.#r;
     }
 
 }
 
 const c1 = new Color();
-c1.setRed(100);
-print(c1);
-print(c1.getRed());
+c1.red = 255;
+print(c1.red);
