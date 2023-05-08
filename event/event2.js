@@ -20,8 +20,10 @@ emitter.on("event2", () => {
 
 emitter.emit("event2");
 
-emitter.removeAllListeners();
+emitter.removeAllListeners("event1");
 
 emitter.emit("event1"); // not work !
-emitter.emit("event2"); // not Work !
+emitter.emit("event2"); 
+
+
 
