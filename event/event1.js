@@ -19,3 +19,10 @@ emitter.on("event2", (arg1, arg2) => {
 
 emitter.emit("event1", 1,2,3,4);
 emitter.emit("event2", 'sag', 'kir khar');
+
+
+emitter.once("event3", () => {
+    print("EVENT3");
+});
+
+emitter.emit("event3");
