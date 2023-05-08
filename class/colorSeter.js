@@ -51,5 +51,5 @@ export default class Color{
 }
 
 const c1 = new Color();
-c1.red = 255;
-print(c1.red);
+
+print(c1);
