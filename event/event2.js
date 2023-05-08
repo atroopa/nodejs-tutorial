@@ -20,10 +20,16 @@ emitter.on("event2", () => {
 
 emitter.emit("event2");
 
-emitter.removeAllListeners("event1");
+//emitter.removeAllListeners("event1");
 
 emitter.emit("event1"); // not work !
 emitter.emit("event2"); 
 
+// Handler in event 1 =====================================
+ const handler = () => {
+    print("this is handler function");
+ }
 
+emitter.on("event1", handler);
+emitter.emit("event1");
 
