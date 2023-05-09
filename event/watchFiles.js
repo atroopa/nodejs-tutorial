@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const watch = fs.watchFile("1.json", (curr, prev) => {
+const watch = fs.watchFile("../1.json", (curr, prev) => {
     console.clear;
     const print =console.log;
     print(curr);
