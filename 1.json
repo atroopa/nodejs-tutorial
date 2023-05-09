@@ -1,0 +1,22 @@
+{
+    "description": " The Collection of the Most Important Moments in the History of the NFT ", 
+    "external_url": "", 
+    "image": "ipfs://QmUgfADdo2ddvEg4eG1on5n5jYyH2CnJfsRKqoQZoaftrP/1.png", 
+    "name": "Important Moments of History",
+    "attributes": [
+        {
+        "trait_type": "Base", 
+        "value": "moment"
+        }, 
+        {
+        "trait_type": "type", 
+        "value": "all"
+        }, 
+        {
+        "display_type": "number", 
+        "trait_type": "Generation", 
+        "value": 1
+        }
+    ]
+
+  }
