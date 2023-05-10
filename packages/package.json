@@ -4,6 +4,9 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon -w .env -w . -e .js .html dotenv.js"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "dotenv": "^16.0.3"
