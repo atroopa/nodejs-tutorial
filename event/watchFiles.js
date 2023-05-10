@@ -1,8 +1,13 @@
 import fs from "fs";
+import EventEmitter from 'events';
 
-const watch = fs.watchFile("../1.json", (curr, prev) => {
-    console.clear;
-    const print =console.log;
-    print(curr);
-    print(prev);
+const print =console.log;
+
+const watch = fs.watchFile("../1.json",{interval: 100} ,(curr, prev) => {
+    // console.clear;
+
+    // print(curr);
+    // print(prev);
 });
+
+print(watch.eventNames());
