@@ -19,3 +19,16 @@ print(`
     DISK: ${chalk.yellow("70%")}
 `);
 
+print(chalk.dim.underline("Hello World!"));
+
+print(chalk.red.inverse("Hello World!"));
+print(chalk.magenta.strikethrough("Hello WorlD !"));
+
+print(chalk.rgb(123, 45, 66).inverse("hello World"));
+
+const error   = chalk.redBright.bold;
+const warning = chalk.hex("#FFA500");
+
+print(error("Error : Use When return Error"));
+
+print(warning("Warning : Use When return Warning"));
